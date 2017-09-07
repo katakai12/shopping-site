@@ -234,6 +234,7 @@ header{
               a:link{
                   
                   color: #524c3e;
+                  font-weight: bold;
                   
               }
               
@@ -245,7 +246,7 @@ header{
               
               a:visited{
                   
-                  color: $Main_color;
+                  color: #524c3e;
                   
               }
              
@@ -389,10 +390,11 @@ header{
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
+                    justify-content: space-between;
          
                  .box{
                      
-                      width: 40%;
+                      width: 42%;
                       background-color: white;
                       margin-top: 2px;
                       margin-left: 2px;
@@ -463,11 +465,11 @@ header{
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
-
+                    justify-content: space-between;
                  
                  .box{
                      
-                      width: 40%;
+                      width: 42%;
                       background-color: white;
                       margin-top: 2px;
                       margin-left: 2px;
@@ -568,6 +570,13 @@ header{
                     display: none;
                     
                 }
+                
+                .pc_sub_img{
+                    
+                    max-width: 100%;
+                    width: 100%;
+                    
+                }
               
               .sub_container{
                   
@@ -581,6 +590,7 @@ header{
                     border-radius: 3px;
                     color: $Main_color;
                     font-size: 1.2rem;
+                    max-width: 100%;
                     
                 }
                 
@@ -621,6 +631,7 @@ header{
                       display: flex;
                       flex-direction: row;
                       flex-wrap: wrap;
+                      justify-content: space-between;
                     
                 .box{
                     
@@ -694,6 +705,7 @@ header{
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
+                    justify-content: space-between;
                     
                 margin-top: -10px;
                     
@@ -870,6 +882,8 @@ header{
                 border: none;
                 font-size: 1.3rem;
                 font-style: italic;
+                max-width: 100%;
+                width: 200px;
                 
            }
            // input
@@ -1184,6 +1198,12 @@ footer{
                     
                 }
                 
+                a:visited{
+                    
+                    color: black;
+                    
+                }
+                
             }
             // .foot li
             
@@ -1354,7 +1374,6 @@ footer{
             
             .list_image{
                 
-                float: none;
                 width: 100%;
                 
                 ul::after{
@@ -1366,7 +1385,11 @@ footer{
                 }
                 
                     ul{
-                    
+                        
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    flex-wrap: wrap;
                     list-style: none;
                     margin: 0 0 0 -5px;
                     
