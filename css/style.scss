@@ -80,15 +80,15 @@ header{
                 .navi_fb{
                 //retina_bg
                 
-                height: 40px;
-                width: 40px;
+                height: 25px;
+                width: 25px;
                 background-repeat: no-repeat;
                 display: inline-block;
                 line-height: 40px;
-                padding-left: 15px;
+                padding-left: 10px;
              
                 background-image: url("../images/top_sp/fb.png");
-                background-size: 40px 40px;
+                background-size: 25px 25px;
              
                 @media screen and(-webkit-min-device-pixel-ratio:2),
                 (min-resolution: 2dppx){
@@ -104,15 +104,15 @@ header{
                 .navi_insta{
                 //retina_bg
                 
-                height: 40px;
-                width: 40px;
+                height: 25px;
+                width: 25px;
                 background-repeat: no-repeat;
                 display: inline-block;
                 line-height: 40px;
-                padding-left: 15px;
+                padding-left: 10px;
                 
                 background-image: url("../images/top_sp/insta.png");
-                background-size: 40px 40px;
+                background-size: 25px 25px;
                 
                 @media screen and(-webkit-min-device-pixel-ratio:2),
                 (min-resolution: 2dppx){
@@ -128,16 +128,16 @@ header{
                 .navi_menu{
                 //retina_bg
                 
-                height: 40px;
-                width: 40px;
+                height: 25px;
+                width: 25px;
                 background-repeat: no-repeat;
                 display: inline-block;
                 line-height: 40px;
-                padding-left: 15px;
+                padding-left: 10px;
                 cursor: pointer;
                 
                 background-image: url("../images/top_sp/menu_icon.png");
-                background-size: 40px 40px;
+                background-size: 25px 25px;
                 
                 @media screen and(-webkit-min-device-pixel-ratio:2),
                 (min-resolution: 2dppx){
@@ -332,6 +332,7 @@ header{
                     background-position: left 10px center;
                     color: $Main_color;
                     font-size: 1.2rem;
+                    border-radius: 3px;
                     
                 }
                 
@@ -577,6 +578,7 @@ header{
                     background-color: #e8e4da;
                     background-repeat: no-repeat;
                     background-position: left 10px center;
+                    border-radius: 3px;
                     color: $Main_color;
                     font-size: 1.2rem;
                     
@@ -843,6 +845,12 @@ header{
 
 #pc_side_bar{
     
+    img{
+        
+        max-width: 100%;
+        
+    }
+    
       .item_search{
           
             background-color: white;
@@ -853,10 +861,15 @@ header{
             input{
                 
                 margin-right: 5px;
+                padding-left: 10px;
                 background-color: #eeeeee;
                 background-image: url("../images/top/search_icon.png");
                 background-repeat: no-repeat;
                 background-position: right 5px center;
+                border-radius: 0;
+                border: none;
+                font-size: 1.3rem;
+                font-style: italic;
                 
            }
            // input
@@ -1105,6 +1118,14 @@ header{
 
 footer{
     
+    margin-bottom: 80px;
+    
+    @media (max-width: 550px){
+        
+         margin-bottom: 40px;
+        
+    }
+    
     
     .pagetop{
         
@@ -1135,15 +1156,17 @@ footer{
         
         overflow: hidden;
         margin-top: 20px;
+        margin-bottom: 15px;
         
         .foot {
             
             width: 500px;
             margin: auto;
+            text-align: center;
             
             li{
                 
-                float: left;
+                display: inline;
                 list-style: none;
                 text-align: center;
                 padding-left: 20px;
@@ -1198,7 +1221,7 @@ footer{
           width: 100%;
           
       }
-      
+
     }
     // media max-width 550px
     
@@ -1345,21 +1368,21 @@ footer{
                     ul{
                     
                     list-style: none;
-                    margin: 0;
-                    padding: 0;
+                    margin: 0 0 0 -5px;
                     
                     
                     li{
                         
-                        width: 18%;
+                        width: 17%;
                         float: left;
-                        padding-left: 4px;
+                        margin: 5px 0 0 0;
+                        padding: 0 0 0 7.9px;
                         
                     }
                     
                     li img{
                         
-                          width: 100%;
+                          max-width: 100%;
                           cursor: pointer;
                         
                     }
@@ -1390,6 +1413,7 @@ footer{
             border-collapse: collapse;
             width: 100%;
             padding: 10px 20px 10px 20px;
+            border: 1px solid gray;
         
         td{
             
